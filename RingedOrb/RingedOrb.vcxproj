@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{232891EE-1EA8-4D8F-8BCF-029D22338776}</ProjectGuid>
+    <RootNamespace>RingedOrb</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)</OutDir>
+    <IntDir>$(SolutionDir)Binaries\IntermidiatesBin\$(Configuration)\$(Platform)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Binaries\$(Configuration)\$(Platform)</OutDir>
+    <IntDir>$(SolutionDir)Binaries\IntermidiatesBin\$(Configuration)\$(Platform)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3d12.lib;d3dcompiler.lib;dxguid.lib;uuid.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d12.lib;d3dcompiler.lib;dxguid.lib;uuid.lib;dxgi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\roApplication.cpp" />
+    <ClCompile Include="Core\roEngineConfig.cpp" />
+    <ClCompile Include="Core\roErrorHandling.cpp" />
+    <ClCompile Include="Core\roEvents.cpp" />
+    <ClCompile Include="Core\roEventSystem.cpp" />
+    <ClCompile Include="Core\roFileSystem.cpp" />
+    <ClCompile Include="Core\roID_Generator.cpp" />
+    <ClCompile Include="Core\roProfiler.cpp" />
+    <ClCompile Include="Graphics\roGeometryGen.cpp" />
+    <ClCompile Include="User Mode\roUserComponent.cpp" />
+    <ClCompile Include="Graphics\GUI\roGUIData.cpp" />
+    <ClCompile Include="Graphics\roConstantRingBuffer.cpp" />
+    <ClCompile Include="Graphics\roGraphicsManager.cpp" />
+    <ClCompile Include="Graphics\roGraphicsRingBuffer.cpp" />
+    <ClCompile Include="Core\roTimer.cpp" />
+    <ClCompile Include="Core\roWindow.cpp" />
+    <ClCompile Include="Graphics\GUI\ImGui_Library\imgui.cpp" />
+    <ClCompile Include="Graphics\GUI\ImGui_Library\imgui_draw.cpp" />
+    <ClCompile Include="Graphics\GUI\ImGui_Library\imgui_impl_dx12.cpp" />
+    <ClCompile Include="Graphics\GUI\ImGui_Library\imgui_impl_win32.cpp" />
+    <ClCompile Include="Graphics\GUI\roGraphicsUI.cpp" />
+    <ClCompile Include="Graphics\roBaseGPUResource.cpp" />
+    <ClCompile Include="Graphics\roCommandAllocator.cpp" />
+    <ClCompile Include="Graphics\roCommandQueue.cpp" />
+    <ClCompile Include="Graphics\roCommonBuffers.cpp" />
+    <ClCompile Include="Graphics\roConstantBuffer.cpp" />
+    <ClCompile Include="Graphics\roDepthBuffer.cpp" />
+    <ClCompile Include="Graphics\roDescriptorHeapManager.cpp" />
+    <ClCompile Include="Graphics\roGPUBuffer.cpp" />
+    <ClCompile Include="Graphics\roGraphicsPipelineStateObject.cpp" />
+    <ClCompile Include="Graphics\roGraphicsResources.cpp" />
+    <ClCompile Include="Graphics\roGraphicsRootSignature.cpp" />
+    <ClCompile Include="Graphics\roModelLoader.cpp" />
+    <ClCompile Include="Graphics\roRenderableEntity.cpp" />
+    <ClCompile Include="Graphics\roShaderLoader.cpp" />
+    <ClCompile Include="Graphics\roGeometryBuffer.cpp" />
+    <ClCompile Include="Graphics\roGPUContext12.cpp" />
+    <ClCompile Include="Graphics\roGPUContextManager.cpp" />
+    <ClCompile Include="Graphics\roGraphicsComponent.cpp" />
+    <ClCompile Include="Graphics\roImageBuffer.cpp" />
+    <ClCompile Include="Graphics\roRenderer.cpp" />
+    <ClCompile Include="Graphics\roRootGraphics.cpp" />
+    <ClCompile Include="Graphics\roViewProjection.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\roEvents.h" />
+    <ClInclude Include="Core\roEventSystem.h" />
+    <ClInclude Include="Graphics\roGeometryGen.h" />
+    <ClInclude Include="Graphics\roLighting.h" />
+    <ClInclude Include="User Mode\roUserComponent.h" />
+    <ClInclude Include="Core\Win32Header.h" />
+    <ClInclude Include="Core\roID_Generator.h" />
+    <ClInclude Include="Core\roProfiler.h" />
+    <ClInclude Include="Graphics\GUI\roGUIData.h" />
+    <ClInclude Include="Graphics\roConstantRingBuffer.h" />
+    <ClInclude Include="Graphics\roGraphicsManager.h" />
+    <ClInclude Include="Graphics\roGraphicsRingBuffer.h" />
+    <ClInclude Include="Core\roStringUtilities.h" />
+    <ClInclude Include="Core\pch.h" />
+    <ClInclude Include="Core\roApplication.h" />
+    <ClInclude Include="Core\roEngineConfig.h" />
+    <ClInclude Include="Core\roErrorHandling.h" />
+    <ClInclude Include="Core\roFileSystem.h" />
+    <ClInclude Include="Core\roTimer.h" />
+    <ClInclude Include="Core\roWindow.h" />
+    <ClInclude Include="Graphics\d3dx12.h" />
+    <ClInclude Include="Graphics\DX12IncludeFile.h" />
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imconfig.h" />
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imgui.h" />
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imgui_impl_dx12.h" />
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imgui_impl_win32.h" />
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imgui_internal.h" />
+    <ClInclude Include="Graphics\GUI\ImGui_Library\stb_rect_pack.h" />
+    <ClInclude Include="Graphics\GUI\ImGui_Library\stb_textedit.h" />
+    <ClInclude Include="Graphics\GUI\ImGui_Library\stb_truetype.h" />
+    <ClInclude Include="Graphics\GUI\roGraphicsUI.h" />
+    <ClInclude Include="Graphics\roBaseGPUResource.h" />
+    <ClInclude Include="Graphics\roCommandAllocator.h" />
+    <ClInclude Include="Graphics\roCommandQueue.h" />
+    <ClInclude Include="Graphics\roCommonBuffers.h" />
+    <ClInclude Include="Graphics\roConstantBuffer.h" />
+    <ClInclude Include="Graphics\roDepthBuffer.h" />
+    <ClInclude Include="Graphics\roDescriptorHeapManager.h" />
+    <ClInclude Include="Graphics\roGPUBuffer.h" />
+    <ClInclude Include="Graphics\roGraphicsPipelineStateObject.h" />
+    <ClInclude Include="Graphics\roGraphicsResources.h" />
+    <ClInclude Include="Graphics\roGraphicsRootSignature.h" />
+    <ClInclude Include="Graphics\roMaterial.h" />
+    <ClInclude Include="Graphics\roModelLoader.h" />
+    <ClInclude Include="Graphics\roRenderableEntity.h" />
+    <ClInclude Include="Graphics\roShaderLoader.h" />
+    <ClInclude Include="Graphics\roGeometryBuffer.h" />
+    <ClInclude Include="Graphics\roGPUContext12.h" />
+    <ClInclude Include="Graphics\roGPUContextManager.h" />
+    <ClInclude Include="Graphics\roGraphicsComponent.h" />
+    <ClInclude Include="Graphics\roImageBuffer.h" />
+    <ClInclude Include="Graphics\roRenderer.h" />
+    <ClInclude Include="Graphics\roRootGraphics.h" />
+    <ClInclude Include="Graphics\roVertex.h" />
+    <ClInclude Include="Graphics\roViewProjection.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RingedOrb.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RO_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

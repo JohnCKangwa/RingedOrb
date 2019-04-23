@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RINGED ORB ENGINE">
+      <UniqueIdentifier>{8fc13d48-9828-438a-bf3b-eb5f1f3dcbbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RINGED ORB ENGINE\Core">
+      <UniqueIdentifier>{75ba5b20-8701-4202-98dd-01af514e7581}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RINGED ORB ENGINE\Graphics">
+      <UniqueIdentifier>{2305b7a7-fb67-4031-8a6e-1d55bc6f92d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RINGED ORB ENGINE\Graphics\GUI">
+      <UniqueIdentifier>{5f697b0b-3e9e-4cda-bb1d-2589b36227b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RINGED ORB ENGINE\Graphics\GUI\imgui">
+      <UniqueIdentifier>{3013b386-5d14-4a08-bbe7-1338acfdaeb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RINGED ORB ENGINE\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graphics\roBaseGPUResource.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roCommandAllocator.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roCommandQueue.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roDepthBuffer.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roDescriptorHeapManager.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGPUBuffer.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGPUContext12.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGPUContextManager.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGraphicsComponent.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGraphicsPipelineStateObject.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGraphicsResources.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGraphicsRootSignature.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roImageBuffer.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roRenderer.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roRootGraphics.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roShaderLoader.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\roApplication.cpp">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\roEngineConfig.cpp">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\roErrorHandling.cpp">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\roWindow.cpp">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGeometryBuffer.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roCommonBuffers.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roConstantBuffer.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roConstantRingBuffer.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roGraphicsRingBuffer.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roRenderableEntity.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\roTimer.cpp">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\roProfiler.cpp">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GUI\ImGui_Library\imgui.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GUI\ImGui_Library\imgui_draw.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GUI\ImGui_Library\imgui_impl_dx12.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GUI\ImGui_Library\imgui_impl_win32.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\GUI\roGraphicsUI.cpp">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\roViewProjection.cpp" />
+    <ClCompile Include="Core\roID_Generator.cpp" />
+    <ClCompile Include="Graphics\roModelLoader.cpp" />
+    <ClCompile Include="Core\roFileSystem.cpp" />
+    <ClCompile Include="Core\roEventSystem.cpp" />
+    <ClCompile Include="Core\roEvents.cpp" />
+    <ClCompile Include="Graphics\roGraphicsManager.cpp" />
+    <ClCompile Include="Graphics\GUI\roGUIData.cpp" />
+    <ClCompile Include="User Mode\roUserComponent.cpp" />
+    <ClCompile Include="Graphics\roGeometryGen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graphics\roImageBuffer.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGraphicsRootSignature.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGraphicsResources.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGraphicsPipelineStateObject.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roShaderLoader.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roRootGraphics.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roRenderer.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGraphicsComponent.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGPUContextManager.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGPUContext12.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGPUBuffer.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\d3dx12.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\DX12IncludeFile.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roBaseGPUResource.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roCommandAllocator.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roCommandQueue.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roDepthBuffer.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roDescriptorHeapManager.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\pch.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\roApplication.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\roEngineConfig.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\roErrorHandling.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\roFileSystem.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\roStringUtilities.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\roWindow.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGeometryBuffer.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roCommonBuffers.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roConstantBuffer.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roConstantRingBuffer.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roGraphicsRingBuffer.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roRenderableEntity.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\roProfiler.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\roTimer.h">
+      <Filter>RINGED ORB ENGINE\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imconfig.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imgui.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imgui_impl_dx12.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imgui_impl_win32.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\ImGui_Library\imgui_internal.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\roGraphicsUI.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\ImGui_Library\stb_truetype.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\ImGui_Library\stb_rect_pack.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\GUI\ImGui_Library\stb_textedit.h">
+      <Filter>RINGED ORB ENGINE\Graphics\GUI\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roVertex.h">
+      <Filter>RINGED ORB ENGINE\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\roViewProjection.h" />
+    <ClInclude Include="Core\roID_Generator.h" />
+    <ClInclude Include="Graphics\roMaterial.h" />
+    <ClInclude Include="Graphics\roModelLoader.h" />
+    <ClInclude Include="Core\Win32Header.h" />
+    <ClInclude Include="Core\roEventSystem.h" />
+    <ClInclude Include="Core\roEvents.h" />
+    <ClInclude Include="Graphics\roGraphicsManager.h" />
+    <ClInclude Include="Graphics\GUI\roGUIData.h" />
+    <ClInclude Include="User Mode\roUserComponent.h" />
+    <ClInclude Include="Graphics\roLighting.h" />
+    <ClInclude Include="Graphics\roGeometryGen.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RingedOrb.rc">
+      <Filter>RINGED ORB ENGINE\Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="RO_icon.ico">
+      <Filter>RINGED ORB ENGINE\Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
